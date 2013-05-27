@@ -2,7 +2,7 @@
 (function () {
   window.Chat = {
     socket : null,
-  
+
     initialize : function(socketURL) {
       this.socket = io.connect(socketURL);
 
@@ -33,7 +33,7 @@
         .append(msg)
         .animate({scrollTop: $('#messages').prop('scrollHeight')}, 0);
     },
- 
+
     //Sends a message to the server,
     //then clears it from the textarea
     send : function() {
